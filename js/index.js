@@ -1,4 +1,5 @@
 const cardsList = document.querySelector('[data-cards_list]');
+const errorWindow = document.querySelector('[data-error_window]');
 
 let clothes = [];
 const dot = '...';
@@ -36,7 +37,7 @@ const renderCards = (container, cardsCount) => {
 	const fragment = document.createDocumentFragment();
 	cardsCount.forEach((card) => {
 		const cardItem = createCards(card);
-		console.log(cardItem);
+		
 		fragment.appendChild(cardItem);
   });
   container.appendChild(fragment);
@@ -54,7 +55,7 @@ if (response.ok) {
 
 
 else {
-	alert('Data error :', response.status);
+	errorWindow.classList.toggle('d__flex');
 } 
 return clothes;
 
