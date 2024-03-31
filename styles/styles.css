@@ -14,7 +14,8 @@
 .main {
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .container {
@@ -42,9 +43,10 @@
 
 .card__item {
 	border: 1px solid #000;
+	width: 300px;
 	max-width: 300px;
-	height: 400px;
-	max-height: 600px;
+	height: 500px;
+	max-height: 650px;
 }
 
 .card__img {
@@ -59,7 +61,7 @@
 	font-size: 20px;
 	font-weight: 700;
 	color: #000;
-	margin-top: 15px;
+	margin: 15px;
 }
 
 .card__description {
@@ -67,12 +69,12 @@
 	font-weight: normal;
 	color: #000;
 	line-height: 20px;
-	margin-top: 15px;
+	margin: 15px;
 }
 
 .card__price {
-	font-size: 16px;
+	font-size: 20px;
 	font-weight: 600;
 	color: #000;
-	margin-top: 30px;
+	margin: 20px 15px;
 }
